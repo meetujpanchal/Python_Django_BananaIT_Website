@@ -1,0 +1,49 @@
+{% extends 'enroll/base.html' %}
+{% block content %}
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio">
+  <div class="container">
+
+    <div class="section-title" data-aos="fade-up">
+      <h2>Some of our <strong>recent works</strong></h2>
+    </div>
+
+    <div class="row" data-aos="fade-up">
+      <div class="col-lg-12 d-flex justify-content-center">
+        <ul id="portfolio-flters">
+          <li data-filter="*" ><a href="{% url 'enroll:story_list' %}" style="color: black" >All</a></li>
+          {% for x in categories %}
+           <li data-filter="">
+             <a href="{{x.get_absolute_url}}" class="filter-active" style="color: black" >{{x.name}}</a>
+           </li>
+           {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div>
+     {% if category %}
+       <h1>{{category.name}}</h1>
+       {% else %}
+       <h1>All Works</h1>
+     {% endif %}
+   </div>
+    <div class="row portfolio-container" data-aos="fade-up">
+     
+     {% for x in story %}
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <a href="{{x.navigatelink}}" target="_blank" rel="noopener noreferrer"></a><img src="{{x.portfol_img.url}}" class="img-fluid" alt="">
+        <div class="portfolio-info">
+          <h4>{{x.title}}</h4>
+          <h5>{{x.category}}</h5>
+          <p>{{x.description}}</p>
+          <a href="{{x.portfol_img.url}}" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+          <a href="potfolio.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+      {% endfor %}
+      
+    </div>
+
+  </div>
+</section><!-- End Portfolio Section -->
+{% endblock content %}

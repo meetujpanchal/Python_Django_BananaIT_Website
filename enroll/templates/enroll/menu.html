@@ -1,0 +1,57 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Bananasoftinfotech</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="../../../static/images/images/apple-touch-icon.png" >
+	<link rel="stylesheet" href="{% static 'enroll/menu/css/style.css' %}">
+	
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light" style="position: sticky; top: 0;" id="ftco-navbar">
+	    <div class="container">
+	    	<h1 class="text-light"><a href="{% url 'enroll:aboutbananit' %}"><img src="/static/images/images/F1 png.png" alt="" width="150" class="img-fluid"></a></h1>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="fa fa-bars"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav m-auto">
+	        	<li class="nav-item active" ><a href="{% url 'enroll:showpage' %}" class="nav-link">Home</a></li>
+	        	<li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+              	<a class="dropdown-item" href="{% url 'enroll:aboutbananit' %}">Banana IT</a>
+                <a class="dropdown-item" href="{% url 'enroll:ourteam' %}">Our Team</a>
+                <a class="dropdown-item" href="{% url 'enroll:testimonial' %}">Testimonials</a>
+                <a class="dropdown-item" href="#">Blog</a>
+              </div>
+            </li>
+	        	<li class="nav-item"><a href="{% url 'enroll:service' %}" class="nav-link">Services</a></li>
+	        	<li class="nav-item"><a href="{% url 'enroll:story_list' %}" class="nav-link">Potfolio</a></li>
+	            <li class="nav-item"><a href="{% url 'enroll:cnt' %}" class="nav-link">Client</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown04">
+                        <a class="dropdown-item" href="{% url 'enroll:careerp' %}">Career</a>
+                        <a class="dropdown-item" href="{% url 'enroll:pricp' %}">Pricing</a>
+                        <a class="dropdown-item" href="{% url 'enroll:contact' %}">Contact Us</a>
+                    </div>
+                  </li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+
+
+	<script src="{% static 'enroll/menu/js/jquery.min.js' %}"></script>
+  <script src="{% static 'enroll/menu/js/popper.js' %}"></script>
+  <script src="{% static 'enroll/menu/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'enroll/menu/js/main.js' %}"></script>
+
+	</body>
+</html>
+

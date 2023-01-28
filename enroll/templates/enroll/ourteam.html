@@ -1,0 +1,148 @@
+{% extends 'enroll/base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ourteam Section</title>
+    <style>
+      div1{
+        text-align: justify;
+        text-justify: inter-word;
+        margin: auto;        
+      }
+    </style>
+</head>
+<body>
+
+  <!-- ======= Our Team Section ======= -->
+  <section id="team" class="team section-bg">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Our <strong>Team</strong></h2>
+        <p>Excellent Management and Development Team.</p>
+      </div>
+
+  <div class="row">
+    {% for st in stu %}
+    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+      <div class="member" data-aos="fade-up">
+        <div class="member-img">
+          <img src="{{st.profile_pic.url}}" width="300" class="img-fluid" alt="">
+          <div class="col item social">
+           <a href="#"><i class="icon ion-social-facebook"></i></a>
+           <a href="#"><i class="icon ion-social-twitter"></i></a>
+           <a href="#"><i class="icon ion-social-snapchat"></i></a>
+           <a href="#"><i class="icon ion-social-instagram"></i></a>
+          </div>
+        </div>
+        <div class="member-info">
+          <h4>{{st.name}}</h4>
+          <span>{{st.designation}},{{st.qualification}}</span>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+
+   </div>
+  </div>
+  <div1>
+  Web Application:
+Mobilization of your business is the need of the hour. In this mobile-first world, having an application will help take your business on-the-go. Web applications for businesses not only forge seamless communication with potential consumers but also play a vital part in the branding process. It can streamline your business, improving efficiency by giving better visibility of the entire business at one place, providing round-the-clock accessibility, and enforcing solid levels of security.
+<br><br>
+Web Solutions:
+In this competitive era, businesses with solid web presence stay on the forefront. With a whopping 97% of people who search online to find local businesses near them, it becomes evident that getting yourself on the world wide web is highly crucial. But do you think creating a website and putting some content and images is all that it takes to get traction? Not at all. The major goal of your online presence should be to connect with your audiences in a way that they place their trust in you and start taking business from you.
+
+To set your business stand apart from others, you must make sure to stay updated and become highly responsive. Did you know that an average visitor lingers on a website for less than 15 seconds? That is the time you get to win or lose; to get them to scroll through your pages or hit the red cross button to close. A responsive, captivative and fast-loading website with engaging content and images that gives value to your visitors is the only key to keep visitors on your site for longer.
+
+Banana IT Bardoli, India is one of the prime website solution providers who have edified businesses dotted across the world with a tremendous online presence through killer websites. Our web solution services include:
+<br><br>
+Brand Website:
+In the internets age, to transform your business into a brand, a remarkable brand website that delivers exceptional customer experience is a must. We live in an era where consumers do in-depth research before any purchase. So, skimping when it comes to your business website can implicate a major step back in the future.
+<br><br>
+E-Commerce
+A budding eCommerce business or a tried and true one, without a powerful website, the future of your business is quite questionable, Quoting the famous American Podcaster and journalist, Jordan Harbinger here “A business without a website is like having a single lemonade stand on the side of the road. But a business with a website is like having a lemonade stand inside every single person's pocket.” Make sure you mark your online business through an outstanding lemonade stand (website).
+<br><br>
+Chrome Extensions:
+Want to give your traditional Chrome web browser an extra edge without digging deep into native code? Create a Chrome extension and your wish will be granted. Chrome extensions enhance the functionality of your Google Chrome browser. It adds on to the monotonous browsing experience boosting productivity. Some use them to enhance security and privacy as well.
+<br><br>
+API Development:
+An application programming interface (API) is a lines of instructions which allow our system to interact with any other system in a secure way and with minimal dependency. APIs are a big part of the web. When two systems (websites, desktops, smartphones) link up through an API, we say they are "integrated." In an integration, you have two sides, each with a special name. One side : the server. This is the side that actually provides the API. It helps to remember that the API is simply another program running on the server .
+</div1>
+</section><!-- End Our Team Section -->
+
+
+
+       <!--Start Skill section-->
+        <section id="skills" class="skills">
+          <div class="container">
+    
+            <div class="section-title" data-aos="fade-up">
+              <h2>Our <strong>Skills</strong></h2>
+              <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+    
+            <div class="row skills-content">
+    
+              <div class="col-lg-6" data-aos="fade-up">
+    
+                <div class="progress">
+                  <span class="skill">HTML <i class="val">100%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+    
+                <div class="progress">
+                  <span class="skill">CSS <i class="val">90%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+    
+                <div class="progress">
+                  <span class="skill">JavaScript <i class="val">75%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+    
+              </div>
+    
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+    
+                <div class="progress">
+                  <span class="skill">PHP <i class="val">80%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+    
+                <div class="progress">
+                  <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+    
+                <div class="progress">
+                  <span class="skill">Photoshop <i class="val">55%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+    
+              </div>
+    
+            </div>
+    
+          </div>
+        </section><!-- End Our Skills Section -->
+       
+</body>
+</html>
+{% endblock content %}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BananaSoftInfoTech</title>
+    <link rel="icon" href="../../../static/images/images/apple-touch-icon.png" >
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.css' %}">
+</head>
+<body>
+        <!--Start Header-->
+        {% include 'enroll/top.html' %}
+        <!--End Header-->
+
+        <!--Start Top-->
+        {% include 'enroll/menu.html' %}
+        <!--End Top-->
+
+        <!--Start Slider-->
+        {% include 'enroll/slider.html' %}
+        <!--End slider-->    
+
+        {% block content %}
+        
+        {% endblock content %}
+
+        <!--Start footer-->
+        {% include 'enroll/footer.html' %}
+        <!--End footer-->
+    <script src="{% static 'enroll/js/bootstrap.js' %}"></script>
+</body>
+</html>

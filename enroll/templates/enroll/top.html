@@ -1,0 +1,18 @@
+<!-- ======= Top Bar ======= -->
+<section id="topbar" class="d-none d-lg-block">
+  <div class="container d-flex">
+    <div class="contact-info mr-auto">
+    {% for contact in contacts %}
+      <img src="/static/images/images/envelope (2).png" alt="" srcset="">
+      <i class="icofont-envelope"></i><a href="mailto:{{contact.email}}">{{contact.email}}</a>
+      <i class="icofont-phone"></i><img src="/static/images/images/phone.png" alt="" srcset=""> {{contact.mobile}}
+    {% endfor %}  
+    </div>
+    <div class="col item social">
+      <a href="#"><i class="icon ion-social-facebook"></i></a>
+      <a href="#"><i class="icon ion-social-twitter"></i></a>
+      <a href="#"><i class="icon ion-social-snapchat"></i></a>
+      <a href="#"><i class="icon ion-social-instagram"></i></a>
+    </div>
+  </div>
+</section>

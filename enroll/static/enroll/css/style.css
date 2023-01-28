@@ -1,0 +1,41 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: rgb(158, 150, 150);
+}
+header
+{
+    padding: 10px 100px;
+    box-sizing: border-box;
+}
+nav
+{
+    width: 100%;
+    
+    border-top: 1px solid rgba(255,255,255,.2);
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+nav ul
+{
+    display: flex;
+    margin: 0;
+    padding: 0 100px;
+    float: right;
+    position: sticky;
+    top: 0;
+}
+nav ul li
+{
+    list-style: none;
+}
+nav ul li a
+{
+    display: block;
+    color: rgb(32, 30, 30);
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
