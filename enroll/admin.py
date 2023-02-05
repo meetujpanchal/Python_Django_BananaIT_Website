@@ -12,7 +12,7 @@ class EnquiryAdmin(admin.ModelAdmin):
 
 @admin.register(TblTeam)
 class TeamAdmin(admin.ModelAdmin):
-    list_display = ['id','name','designation','qualification','profile_pic']
+    list_display = ['id','name','designation','qualification','profile_pic','fblink','inlink','twlink','linlink']
 
 @admin.register(Tblslider)
 class SliderAdmin(admin.ModelAdmin):

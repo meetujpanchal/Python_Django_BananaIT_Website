@@ -11,6 +11,10 @@ class TblTeam(models.Model):
     designation = models.CharField(max_length=100)
     qualification = models.CharField(max_length=100)
     profile_pic = models.FileField(upload_to= 'images/',null=True,blank=True)
+    fblink = models.CharField(max_length=100,default="")
+    inlink = models.CharField(max_length=100,default="")
+    twlink = models.CharField(max_length=100,default="")
+    linlink = models.CharField(max_length=100,default="")
 
     def __str__(self):
         return "%s" %(self.name)
